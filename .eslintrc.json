@@ -1,4 +1,6 @@
 {
+  "parser": "babel-eslint",
+  
   "ecmaFeatures": {
     "modules": true,
     "experimentalObjectRestSpread": true
@@ -16,6 +18,7 @@
   ],
 
   "parserOptions": {
+    "ecmaVersion": 7,
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true

@@ -10,8 +10,8 @@ describe('<App />', function () {
     wrapper = shallow(<App />);
   });
 
-  it('has a single wrapper element', () => {
-    expect(wrapper.find('.wrapper'))
+  it('has a Router component', () => {
+    expect(wrapper.find('Router'))
       .to.have.length(1);
   });
 });
