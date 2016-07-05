@@ -28,7 +28,8 @@ export class Header extends React.Component {
           url: '/Hyrbutik'
         }
       ],
-      active: 1
+      active: 1,
+      userName: 'John Doe'
     };
   }
   render() {
@@ -36,6 +37,8 @@ export class Header extends React.Component {
       <div id='header'>
         <div className='logo'></div>
         <Menu menuItems={this.state.menuItems} />
+        <div className='profile'>{this.state.userName}</div>
+        <div className='search'></div>
       </div>
     );
   }
