@@ -18,4 +18,12 @@ describe('<Header />', function () {
     expect(wrapper.find('Menu'))
       .to.have.length(1);
   });
+  it('has a profile dropdown element', () => {
+    expect(wrapper.find('.profile'))
+      .to.have.length(1);
+  });
+  it('has a search button', () => {
+    expect(wrapper.find('.search'))
+      .to.have.length(1);
+  });
 });
