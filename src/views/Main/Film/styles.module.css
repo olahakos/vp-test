@@ -1,0 +1,30 @@
+.film{
+  margin: 0px auto;
+  .half-panel{
+    width: 50%;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .film{
+    width: 100%;
+    .half-panel{
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width : 768px) and (max-device-width : 1024px) {
+  .film{
+    width: 768px;
+  }
+}
+
+@media only screen  and (min-width : 1024px) {
+  .film{
+    width: 960px;
+  }
+}

@@ -1,6 +1,6 @@
 {
   "parser": "babel-eslint",
-  
+
   "ecmaFeatures": {
     "modules": true,
     "experimentalObjectRestSpread": true
@@ -37,7 +37,8 @@
     "describe": false,
     "beforeEach": false,
     "inject": false,
-    "it": false
+    "it": false,
+    "fetch": true
   },
 
   "rules": {

@@ -9,7 +9,8 @@ var config = getConfig({
   port: envConfig.port,
   in: path.join(__dirname, 'src/app.js'),
   out: path.join(__dirname, 'dist'),
-  clearBeforeBuild: true
+  clearBeforeBuild: true,
+  title: 'VP-TEST'
 });
 
 // setup some aliases for webpack
