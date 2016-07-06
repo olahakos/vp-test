@@ -7,7 +7,8 @@ export class Trailer extends React.Component {
     const data = this.props.data;
     return (
       <div className='trailer'>
-        <img src={data.image} alt={data.title} />
+        <img src={data.image} alt={data.title} className='coverImage' />
+        <div className='playButton'></div>
       </div>
     );
   }

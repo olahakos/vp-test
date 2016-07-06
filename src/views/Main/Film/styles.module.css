@@ -1,10 +1,19 @@
+@import url("../../../styles/params.css");
+
 .film{
+  position: relative;
+  top: var(--topbar-height);
   margin: 0px auto;
+
+  display: flex;
+  align-items: top;
+  justify-content: space-around;
+
+  padding-top: var(--film-top-padding);
+
   .half-panel{
     width: 50%;
-    float: left;
-    margin: 0px;
-    padding: 0px;
+    padding: var(--film-panel-padding);
   }
 }
 

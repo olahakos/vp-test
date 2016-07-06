@@ -16,4 +16,8 @@
   --search-icon-size: 30px;
   --search-padding-size: 5px;
   --search-radius-size: 20px;
+
+  /* FILM */
+  --film-panel-padding: 20px;
+  --film-top-padding: 30px;
 }
