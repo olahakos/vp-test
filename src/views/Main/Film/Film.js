@@ -64,10 +64,12 @@ export class FilmComponent extends React.Component {
       };
       return (
         <div className='film'>
+
           <div className='media half-panel'>
             <Trailer data={trailerData} />
             <a className='report'>{config.lang.report}</a>
           </div>
+
           <div className='details half-panel'>
             <div className='title'>{this.state.title}</div>
             <div className='genres'>{this.state.genres.join('/')}</div>

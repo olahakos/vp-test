@@ -1,13 +1,9 @@
-require('whatwg-fetch');
-
 export function getContent(apiKey, baseUrl, path) {
-  return new Promise((resolve, reject) => {
-    fetch(`${baseUrl}${path}`)
+  return fetch(`${baseUrl}${path}`)
       .then(data => {
-        resolve(data.json());
+        return data.json();
       })
       .catch((err) => {
-        reject(err);
+        throw err;
       });
-  });
 }
