@@ -13,4 +13,6 @@ config.apiBaseUrl = process.env.API_BASE_URL || 'http://content.viaplay.se';
 config.language = process.env.VP_LANG || 'SE';
 config.lang = require(`./lang/${config.language}`);
 
+config.title = process.env.TITLE || 'VP-TEST';
+
 module.exports = config;

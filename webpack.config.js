@@ -9,7 +9,14 @@ var config = getConfig({
   port: envConfig.port,
   in: path.join(__dirname, 'src/app.js'),
   out: path.join(__dirname, 'dist'),
-  clearBeforeBuild: true
+  clearBeforeBuild: '!(favicon.ico)',
+  html: function (context) {
+    return {
+      'index.html': context.defaultTemplate({
+        title: envConfig.title
+      })
+    };
+  }
 });
 
 // setup some aliases for webpack

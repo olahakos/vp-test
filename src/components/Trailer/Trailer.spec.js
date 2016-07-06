@@ -16,7 +16,11 @@ describe('<Trailer />', function () {
   });
 
   it('has Trailer image', () => {
-    expect(wrapper.find('img'))
+    expect(wrapper.find('img.coverImage'))
+      .to.have.length(1);
+  });
+  it('has a play button image', () => {
+    expect(wrapper.find('img.playButton'))
       .to.have.length(1);
   });
   it('has clickable play button');
