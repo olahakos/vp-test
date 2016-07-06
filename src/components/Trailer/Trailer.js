@@ -2,16 +2,13 @@ import React from 'react';
 
 import './styles.module.css';
 
-export class Trailer extends React.Component {
-  render() {
-    const data = this.props.data;
-    return (
-      <div className='trailer'>
-        <img src={data.image} alt={data.title} className='coverImage' />
-        <div className='playButton'></div>
-      </div>
-    );
-  }
+function Trailer({data}) {
+  return (
+    <a className='trailer' href='#'>
+      <img src={data.image} alt={data.title} className='coverImage' />
+      <img src={require('assets/play_button.png')} className='playButton' />
+    </a>
+  );
 }
 
 export default Trailer;

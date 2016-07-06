@@ -20,4 +20,7 @@
   /* FILM */
   --film-panel-padding: 20px;
   --film-top-padding: 30px;
+
+  /* THUMB */
+  --thumb-play-width: 75px;
 }
