@@ -16,7 +16,7 @@ deployment:
   master:
     branch: master
     commands:
-      - npm build
+      - npm run build
       - docker build -t vp-test .
       - docker login -e . -u $DOCKER_USER -p $DOCKER_PASS quay.io
       - docker tag vp-test quay.io/akos/vp-test:master
@@ -27,7 +27,7 @@ deployment:
   dev:
     branch: dev
     commands:
-      - npm build
+      - npm run build
       - docker build -t vp-test .
       - docker login -e . -u $DOCKER_USER -p $DOCKER_PASS quay.io
       - docker tag vp-test quay.io/akos/vp-test:latest
