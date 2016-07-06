@@ -5,6 +5,7 @@ import Header from 'components/Header/Header';
 import './styles.module.css';
 
 export class Container extends React.Component {
+
   render() {
     let children = null;
     if (this.props.children) {
@@ -14,7 +15,6 @@ export class Container extends React.Component {
     return (
       <div>
         <Header />
-        Hello from the container
         <div className='content'>
           {children}
         </div>
