@@ -1,0 +1,19 @@
+:root {
+  /* COLORS */
+  --dark-blue: #1e272e;
+  --white: #fff;
+  --black: #000;
+
+  /* TOP BAR */
+  --topbar-height: 80px;
+  --topbar-li-height: 40px;
+  --topbar-menu-padding: 40px;
+  --topbar-menu-font-size: 28px;
+  --topbar-menu-item-padding: 30px 10px;
+  --profile-size: 14px;
+
+  /* SEARCH BUTTON */
+  --search-icon-size: 30px;
+  --search-padding-size: 5px;
+  --search-radius-size: 20px;
+}

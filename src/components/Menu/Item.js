@@ -6,10 +6,8 @@ export class Item extends React.Component {
   render() {
     const item = this.props.item;
     return (
-      <li
-        className='item'
-        onClick={this.props.onItemClick.bind(this)}
-      >{item.name}</li>
+      <li className='item'
+      ><a href='#' onClick={this.props.onItemClick.bind(this)}>{item.name}</a></li>
     );
   }
 }
