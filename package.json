@@ -72,6 +72,7 @@
     "test"
   ],
   "dependencies": {
+    "font-awesome": "^4.6.3",
     "lodash": "^4.13.1",
     "react": "^15.2.0",
     "react-dom": "^15.2.0",

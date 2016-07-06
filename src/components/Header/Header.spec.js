@@ -22,8 +22,8 @@ describe('<Header />', function () {
     expect(wrapper.find('.profile'))
       .to.have.length(1);
   });
-  it('has a search button', () => {
-    expect(wrapper.find('.search'))
+  it('has a search component', () => {
+    expect(wrapper.find('Search'))
       .to.have.length(1);
   });
 });
