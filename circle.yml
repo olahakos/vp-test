@@ -1,0 +1,37 @@
+machine:
+  node:
+    version: 4.3.2
+  services:
+    - docker
+
+dependencies:
+  override:
+    - npm install
+
+test:
+  override:
+    - npm test
+
+deployment:
+  master:
+    branch: master
+    commands:
+      - npm build
+      - docker build -t vp-test .
+      - docker login -e . -u $DOCKER_USER -p $DOCKER_PASS quay.io
+      - docker tag vp-test quay.io/akos/vp-test:master
+      - docker push        quay.io/akos/vp-test:master
+      - docker tag vp-test quay.io/akos/vp-test:${CIRCLE_SHA1:0:7}
+      - docker push        quay.io/akos/vp-test:${CIRCLE_SHA1:0:7}
+      - docker logout
+  dev:
+    branch: dev
+    commands:
+      - npm build
+      - docker build -t vp-test .
+      - docker login -e . -u $DOCKER_USER -p $DOCKER_PASS quay.io
+      - docker tag vp-test quay.io/akos/vp-test:latest
+      - docker push        quay.io/akos/vp-test:latest
+      - docker tag vp-test quay.io/akos/vp-test:${CIRCLE_SHA1:0:7}
+      - docker push        quay.io/akos/vp-test:${CIRCLE_SHA1:0:7}
+      - docker logout
