@@ -1,0 +1,21 @@
+@import url("../../styles/params.css");
+
+.trailer{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+
+  .playButton{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: var(--thumb-play-width);
+  }
+
+  .coverImage{
+    width: 100%;
+    z-index: 9;
+    text-align: center;
+  }
+}

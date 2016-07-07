@@ -1,0 +1,23 @@
+@import url("../../styles/params.css");
+
+.menu{
+  padding: 0px;
+  margin: 0px;
+  li{
+    display: inline;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: var(--topbar-li-height);
+    h1 { font-size: var(--topbar-menu-font-size); }
+    a{
+      text-decoration: none;
+      color: var(--white);
+      padding: var(--topbar-menu-item-padding);
+      background-color: var(--dark-blue);
+    }
+    a:hover, .active{
+      color: var(--black);
+      background-color: var(--white);
+    }
+  }
+}

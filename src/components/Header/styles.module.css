@@ -1,0 +1,26 @@
+@import url("../../styles/params.css");
+
+/* HEADER */
+.topbar {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background: var(--dark-blue);
+  width: 100%;
+  padding: 0 25px;
+  height: var(--topbar-height);
+  line-height: var(--topbar-height);;
+  color: var(--white);
+
+  .logo{
+    float: left;
+    max-height: 40px;
+    margin-right: 40px;
+  }
+
+  .profile{
+    font-size: var(--profile-size);
+    padding-right: 30px;
+  }
+}

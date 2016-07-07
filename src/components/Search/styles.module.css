@@ -1,0 +1,10 @@
+@import url("../../styles/params.css");
+
+.search{
+  background-color: var(--white);
+  border-radius: var(--search-radius-size);
+  img{
+    width: var(--search-icon-size);
+    padding: var(--search-padding-size);
+  }
+}
