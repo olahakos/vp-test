@@ -15,7 +15,7 @@
       padding: var(--topbar-menu-item-padding);
       background-color: var(--dark-blue);
     }
-    a:hover{
+    a:hover, .active{
       color: var(--black);
       background-color: var(--white);
     }

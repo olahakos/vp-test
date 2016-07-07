@@ -5,18 +5,17 @@ import './styles.module.css';
 
 export class Menu extends React.Component {
 
-  onItemClick(obj) {
-  };
-
   render() {
     return (
       <ul className='menu'>
-      {this.props.menuItems.map(item => {
+      {this.props.menuItems.map((item, index) => {
+        const act = (index === this.props.active);
         return (
           <Item
             item={item}
-            onItemClick={this.onItemClick.bind(this)}
-            key={item.url} />
+            key={index}
+            isActive={act}
+            />
         );
       })}
       </ul>

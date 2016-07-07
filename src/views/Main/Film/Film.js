@@ -68,7 +68,7 @@ export class FilmComponent extends React.Component {
 
           <div className='media half-panel'>
             <Trailer data={trailerData} />
-            <a className='report'>{config.lang.report}</a>
+            <a className='report' href='#'>{config.lang.report}</a>
           </div>
 
           <div className='details half-panel'>
