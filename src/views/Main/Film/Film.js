@@ -29,7 +29,8 @@ export class FilmComponent extends React.Component {
         directors: vp.content.people.directors,
         parentalRating: vp.content.parentalRating,
         flags: vp.system.flags,
-        image: vp.content.images.landscape
+        image: vp.content.images.landscape,
+        title: vp.content.title
       };
     } else {
       return false;
@@ -43,6 +44,7 @@ export class FilmComponent extends React.Component {
         const obj = this.validateData(data);
         if (obj) {
           this.setState(obj);
+          console.log(obj);
         }
       })
       .catch(err => {
@@ -70,15 +72,28 @@ export class FilmComponent extends React.Component {
           </div>
 
           <div className='details half-panel'>
-            <div className='title'>{this.state.title}</div>
-            <div className='genres'>{this.state.genres.join('/')}</div>
-            <div className='year'>{this.state.year}</div>
-            <div className='duration'>{this.state.duration}</div>
+            <h1 className='title'>{this.state.title}</h1>
+            <div className='subhead'>
+              <div className='genres'>{this.state.genres.join('/')}</div>
+              <div className='year'>{this.state.year}</div>
+              <div className='duration'>{this.state.duration}</div>
+            </div>
+
             <Imdb data={this.state.imdb} lang={config.lang.fan} />
-            <div className='synopsis'>{this.state.synopsis}</div>
-            <div className='actors'>{config.lang.actors}: {this.state.actors.join(', ')}</div>
-            <div className='directors'>{config.lang.directors}: {this.state.directors.join(', ')}</div>
-            <div className='country'>{config.lang.country}: {this.state.country}</div>
+
+            <p className='synopsis'>{this.state.synopsis}</p>
+            <div className='actors item-list'><b>{config.lang.actors}</b>: {this.state.actors.map((item, index) => {
+              return (
+                <a key={index} href='#'>{item}</a>
+              );
+            })}
+            </div>
+            <div className='directors item-list'><b>{config.lang.directors}</b>: {this.state.directors.map((item, index) => {
+              return (
+                <a key={index} href='#'>{item}</a>
+              );
+            })}</div>
+            <div className='country'><b>{config.lang.country}</b>: {this.state.country}</div>
           </div>
         </div>
       );

@@ -1,0 +1,30 @@
+@import url("../../styles/params.css");
+
+.imdb{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;;
+  padding: 10px 0px;
+  a, div{
+    float: left;
+  }
+  a{
+    padding-right: 8px;
+  }
+  .rating{
+    font-weight: bold;
+    padding-right: 3px;
+    font-size: 16px;
+  }
+
+  .ratingCnt{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;;
+  }
+
+  .fan{
+    color: var(--mid-gray);
+    font-size: 12px;
+  }
+}

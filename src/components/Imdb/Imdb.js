@@ -11,9 +11,11 @@ export class Imdb extends React.Component {
         <a href={data.url} target='_blank'>
           <img src={require('assets/imdb.jpg')} alt='imdb'/>
         </a>
-        <div className='rating'>{data.rating}</div>
-        <div className='fan'>
-          {lang.replace('%s', data.votes)}
+        <div className='ratingCnt'>
+          <div className='rating'>{data.rating}</div>
+          <div className='fan'>
+            {lang.replace('%s', data.votes)}
+          </div>
         </div>
       </div>
     );

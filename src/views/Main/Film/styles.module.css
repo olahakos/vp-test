@@ -14,6 +14,51 @@
   .half-panel{
     width: 50%;
     padding: var(--film-panel-padding);
+    display: flex;
+    flex-direction: column;
+  }
+  /* DETAILS */
+  h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--dark-blue);
+    margin-top: 8px;
+  }
+  p{
+    margin-top: 0px;
+  }
+  .subhead{
+    display: block;
+
+    div{
+      font-size: 25px;
+      color: var(--dark-gray);
+      float: left;
+      &::after{
+        padding: 0px 10px;
+        color: var(--light-gray);
+        content: '|';
+      }
+      &:last-child:after {
+        content: '';
+      }
+    }
+  }
+  .item-list{
+    a{
+      color: var(--light-blue);
+      text-decoration: none;
+      &::after{
+        color: var(--dark-gray);
+        content: ', ';
+      }
+      &:last-child:after{
+        content: '';
+      }
+      &:hover{
+        text-decoration: underline;
+      }
+    }
   }
 }
 
@@ -35,5 +80,8 @@
 @media only screen  and (min-width : 1024px) {
   .film{
     width: 960px;
+    .half-panel{
+      width: 50%;
+    }
   }
 }
