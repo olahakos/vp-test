@@ -3,7 +3,7 @@
 
 ## Start the application
 
-** 1. With Docker:**
+**1. With Docker:**
 ```
 $ docker pull quay.io/akos/vp-test
 $ docker run -it -p 8080:80 quay.io/akos/vp-test
@@ -12,7 +12,7 @@ After this, you can see the application on your `http://localhost:8080`.
 
 ---
 
-** 2. from repository: **
+**2. from repository: **
 
 After cloning the repository:
 ```

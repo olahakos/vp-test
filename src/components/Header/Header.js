@@ -21,7 +21,7 @@ export class Header extends React.Component {
       <div className='topbar flexcnt'>
         <div className='flexcnt'>
           <img className='logo' src={require('assets/header-logo.png')} alt='viaplay' />
-          <Menu menuItems={this.state.menuItems} />
+          <Menu menuItems={this.state.menuItems} active={this.state.active} />
         </div>
         <div className='flexcnt'>
           <div className='profile'>{this.state.userName} <i className="fa fa-angle-down"></i>
