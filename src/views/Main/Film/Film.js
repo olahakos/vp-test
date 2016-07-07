@@ -38,10 +38,9 @@ export class FilmComponent extends React.Component {
 
   componentDidMount() {
     const url = `${config.apiBaseUrl}${this.props.location.pathname}`;
-    getContent('', url, '')
+    getContent(url)
       .then(data => {
         const obj = this.validateData(data);
-        console.log(obj);
         if (obj) {
           this.setState(obj);
         }

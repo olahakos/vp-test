@@ -1,5 +1,5 @@
-export function getContent(apiKey, baseUrl, path) {
-  return fetch(`${baseUrl}${path}`)
+export function getContent(url) {
+  return fetch(`${url}`)
       .then(data => {
         return data.json();
       })

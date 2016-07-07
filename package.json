@@ -64,6 +64,7 @@
     "react-addons-test-utils": "^15.2.0",
     "sinon": "^1.17.4",
     "style-loader": "^0.13.1",
+    "superagent": "^2.0.0",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
     "yargs": "^4.7.1"
@@ -78,6 +79,7 @@
     "react": "^15.2.0",
     "react-dom": "^15.2.0",
     "react-router": "^2.5.2",
-    "whatwg-fetch": "^1.0.0"
+    "whatwg-fetch": "^1.0.0",
+    "xml2js": "^0.4.17"
   }
 }
