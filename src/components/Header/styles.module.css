@@ -1,5 +1,6 @@
 @import url("../../styles/params.css");
 
+/* HEADER */
 .topbar {
   position: fixed;
   z-index: 10;
@@ -11,8 +12,6 @@
   height: var(--topbar-height);
   line-height: var(--topbar-height);;
   color: var(--white);
-
-
 
   .logo{
     float: left;
