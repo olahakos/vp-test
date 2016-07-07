@@ -1,6 +1,6 @@
 {
   "name": "vp-test",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Test project for ViaPlay",
   "main": "webpack.config.js",
   "scripts": {
