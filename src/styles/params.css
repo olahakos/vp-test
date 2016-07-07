@@ -3,6 +3,10 @@
   --dark-blue: #1e272e;
   --white: #fff;
   --black: #000;
+  --dark-gray: #41403d;
+  --light-gray: #dadada;
+  --mid-gray: #8b8d97;
+  --light-blue: #006fc7;
 
   /* TOP BAR */
   --topbar-height: 80px;
@@ -23,4 +27,5 @@
 
   /* THUMB */
   --thumb-play-width: 75px;
+
 }
