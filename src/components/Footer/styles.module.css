@@ -1,0 +1,40 @@
+@import url("../../styles/params.css");
+
+/* FOOTER CSS */
+
+.bottombar {
+  z-index: 10;
+  background: var(--dark-blue);
+  bottom: 0;
+  width: 100%;
+  padding: 30px 25px;
+  color: var(--white);
+
+  display:flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  .footer-title{
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--white);
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+  ul{
+    padding: 0;
+    margin: 0;
+  }
+  li{
+    list-style: none;
+    padding-bottom: 5px;
+    a{
+      font-size: 14px;
+      color: var(--light-gray);
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}

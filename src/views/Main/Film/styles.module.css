@@ -1,9 +1,11 @@
 @import url("../../../styles/params.css");
 
+/* FILM */
+
 .film{
-  position: relative;
-  top: var(--topbar-height);
-  margin: 0px auto;
+
+  margin: var(--topbar-height) auto 30px auto;
+
 
   display: flex;
   align-items: top;
