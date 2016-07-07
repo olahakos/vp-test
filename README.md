@@ -12,7 +12,7 @@ After this, you can see the application on your `http://localhost:8080`.
 
 ---
 
-**2. from repository: **
+**2. from repository:**
 
 After cloning the repository:
 ```

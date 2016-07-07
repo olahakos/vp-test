@@ -7,6 +7,7 @@
   --light-gray: #dadada;
   --mid-gray: #8b8d97;
   --light-blue: #006fc7;
+  --yellow: #e5d65b;
 
   /* TOP BAR */
   --topbar-height: 80px;
@@ -28,4 +29,6 @@
   /* THUMB */
   --thumb-play-width: 75px;
 
+  /* STAR */
+  --star-size: 40px;
 }
