@@ -1,0 +1,22 @@
+@import url("../../styles/params.css");
+
+/* BADGES */
+.badges{
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px;
+  text-transform: uppercase;
+
+  .badge{
+    padding: 2px 6px;
+    margin: 3px;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 2px;
+    &:first-child{
+      margin-left: 0px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+/* STAR CSS */
+@import url("../../styles/params.css");
+
+.starBox{
+  border-style: solid;
+  border-width: thin;
+  border-radius: 5px;
+  border-color: var(--light-gray);
+
+  width: var(--star-size);
+  height: var(--star-size);
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 20px;
+  text-decoration: none;
+
+  i{
+    color: var(--light-gray);
+  }
+  &.stared{
+    i{
+      color: var(--yellow);
+    }
+  }
+  &:hover i{
+    color: var(--yellow);
+  }
+}

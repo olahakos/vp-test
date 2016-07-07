@@ -2,15 +2,19 @@ import _ from 'lodash';
 import React from 'react';
 
 import './styles.module.css';
+import Badges from 'components/Badges/Badges';
 import config from 'config';
 import {getContent} from 'utils/vpContentHelper';
 import Imdb from 'components/Imdb/Imdb';
+import Star from 'components/Star/Star';
 import Trailer from 'components/Trailer/Trailer';
 
 export class FilmComponent extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      stared: false
+    };
   }
 
   validateData(data) {
@@ -44,7 +48,6 @@ export class FilmComponent extends React.Component {
         const obj = this.validateData(data);
         if (obj) {
           this.setState(obj);
-          console.log(obj);
         }
       })
       .catch(err => {
@@ -94,6 +97,8 @@ export class FilmComponent extends React.Component {
               );
             })}</div>
             <div className='country'><b>{config.lang.country}</b>: {this.state.country}</div>
+            <Badges badges={[this.state.flags[0], this.state.parentalRating]} />
+            <Star stared={this.state.stared}/>
           </div>
         </div>
       );
